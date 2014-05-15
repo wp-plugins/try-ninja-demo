@@ -32,6 +32,21 @@ Yes. This plugin will not create the widget if Ninja Demo is not activated.
 
 Ninja Demo runs on WordPress Multisite in a network configuration. Each demo user actually creates their own instance of the main network site every time they log into the demo. By network activating this plugin, you make it available to each [demo] site in the network.
 
+= How do I output the demo entry form? =
+
+All you have to do is use the widget. When the user is not inside of the demo, the entry form will display just below the content you place in the widget. When the user is inside of the demo, your previous content and entry form will both be replaced by the content you place in the widget for users who are inside of the demo.
+
+= Can I style the widget? =
+
+Certainly. Use the following CSS classes.
+
+`.try_ninja_demo_widget` - Wraps the entire widget output
+`.tnd-widget` - Wraps all content below the widget title
+`.tnd-widget-content` - Wraps all content you place inside of either textarea
+`.tnd-not-in-demo` - Wraps only the content that displays if the user is not in the demo
+`.tnd-in-demo` - Wraps only the content that displays if the user is in the demo
+`.nd-start-demo` - (Ninja Demo) Wraps the form question and submit
+
 == Screenshots ==
 
 1. widget preview
