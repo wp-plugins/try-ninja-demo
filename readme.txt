@@ -40,7 +40,7 @@ All you have to do is use the widget. When the user is not inside of the demo, t
 
 Certainly. Use the following CSS classes.
 
-.try_ninja_demo_widget`
+`.try_ninja_demo_widget`
 Wraps the entire widget output
 `.tnd-widget`
 Wraps all content below the widget title
