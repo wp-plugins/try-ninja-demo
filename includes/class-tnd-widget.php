@@ -15,7 +15,7 @@ class TND_Widget extends WP_Widget
 		
 		// build widget specifics
 		$widget_ops = array( 
-			'classname'		=> 'try_ninja_demo_widget', 
+			'classname'		=> 'try-ninja-demo-widget', 
 			'description'	=> __( 'Use this widget to output the Ninja Demo sign-in form and display content based on whether or not the user is inside the demo.', 'tnd' ) 
 		);
 		$control_ops = array( 
