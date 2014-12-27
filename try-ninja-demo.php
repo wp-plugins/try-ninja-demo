@@ -8,7 +8,7 @@
  * Author URI: http://seandavis.co
  * License: GPL2
  * Requires at least: 3.8
- * Tested up to: 3.9
+ * Tested up to: 4.1
  * Domain Path: /languages/
  * 
  * This plugin is free software; you can redistribute it and/or modify
@@ -32,38 +32,38 @@ if ( is_plugin_active( 'ninja-demo/ninja-demo.php' ) ) {
 
 	class Try_Ninja_Demo
 	{	
-	
+
 		/**
 		 * important plugin information and recourses
 		 */
 		public function __construct() {
-	
+
 			// define plugin name
 			define( 'TND_NAME', 'Try Ninja Demo' );
-	
+
 			// define plugin version
 			define( 'TND_VERSION', '1.0.0' );
-	
+
 			// define plugin directory
 			define( 'TND_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-	
+
 			// define plugin root file
 			define( 'TND_URL', trailingslashit( plugin_dir_url( __FILE__ ) ) );
-	
+
 			// load text domain
 			add_action( 'init', array( $this, 'load_textdomain' ) );
-			
+
 			// load plugin files
 			$this->includes();
 		}	
-	
+
 		/**
 		 * load TND textdomain
 		 */
 		public function load_textdomain() {
 			load_plugin_textdomain( 'tnd', false, TND_DIR . 'languages/' );
 		}		
-		
+
 		/**
 		 * all required plugin files
 		 */
@@ -72,5 +72,5 @@ if ( is_plugin_active( 'ninja-demo/ninja-demo.php' ) ) {
 		}
 	}
 	new Try_Ninja_Demo();
-	
+
 } // end check for Ninja Demo
